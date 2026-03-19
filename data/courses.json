@@ -1,43 +1,43 @@
 [
   {
     "id": "c1",
-    "title": "Character Design Fundamentals",
+    "title": "HOW I CREATE Hair with Xgen - Maya",
     "category": "Character Design",
     "level": "Beginner",
     "thumbnail": "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg",
     "screenshots": [
-      "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg",
+      "https://i.ibb.co/Pzft7sr1/1981490.webp",
       "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg"
     ],
     "tags": ["characters", "fundamentals", "design", "poses"],
-    "hours": 6.5,
-    "description": "Learn the foundations of appealing character design: shape language, proportions, gesture and readable silhouettes.",
-    "software": ["Photoshop", "Blender"],
+    "hours": 7,
+    "description": "The goal of this product, is to give you all the keys to create realistic hair in X-gen / Maya using xgen-core. From learning all the X-gen fundamentals, to create your first Haircut.",
+    "software": ["Maya", "Zbrush", "Arnold"],
     "language": "English",
-    "subtitles": true,
+    "subtitles": false,
     "materials": true,
     "downloadLink": "https://example.com/downloads/character-design-fundamentals",
     "sourceLink": "https://example.com/courses/character-design-fundamentals"
   },
   {
     "id": "c2",
-    "title": "Advanced Character Design Techniques",
+    "title": "Introduction to XGen",
     "category": "Character Design",
-    "level": "Advanced",
-    "thumbnail": "https://picsum.photos/seed/char-advanced-1/600/400",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/C3kN1zSX/photo-2026-03-13-10-49-47.jpg",
     "screenshots": [
-      "https://picsum.photos/seed/char-advanced-2/800/450",
-      "https://picsum.photos/seed/char-advanced-3/800/450"
+      "https://i.ibb.co/39839SJd/330646.webp",
+      "https://i.ibb.co/YBgC2V4K/330645.webp"
     ],
     "tags": ["characters", "portfolio", "rendering", "costume"],
-    "hours": 9,
-    "description": "Push your character concepts to production quality with advanced rendering, costuming and personality-driven design.",
-    "software": ["Photoshop", "ZBrush"],
+    "hours": 7,
+    "description": "In Introduction to XGen, you'll learn the fundamentals of working with XGen and creating your first grooms. You'll learn all the tools you must know and also how to avoid common mistakes in XGen. Later in the series, you'll learn the full process for creating a simple and professional groom from start to finish; no time-lapses. Every step will be shown.",
+    "software": ["Maya"],
     "language": "English",
-    "subtitles": true,
-    "materials": true,
+    "subtitles": false,
+    "materials": false,
     "downloadLink": "https://example.com/downloads/character-design-advanced",
-    "sourceLink": "https://example.com/courses/character-design-advanced"
+    "sourceLink": "https://flipnm.co/introXGen"
   },
   {
     "id": "c3",
