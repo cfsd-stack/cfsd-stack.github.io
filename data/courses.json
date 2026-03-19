@@ -241,33 +241,33 @@
   },
   {
     "id": "c13",
-    "title": "Unity for Real-time Rendering",
+    "title": "VFX for Games in Unity",
     "category": "Unity",
-    "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/unity-1/600/400",
+    "level": "Intermediate",
+    "thumbnail": "https://i.ibb.co/v65MQ0Xc/174421sd8ujdojjuk5aaor.gif",
     "screenshots": [
-      "https://picsum.photos/seed/unity-1a/800/450",
-      "https://picsum.photos/seed/unity-1b/800/450"
+      "https://i.ibb.co/JFzQCnz8/174422a44milb4olzjbr3s.gif",
+      "https://i.ibb.co/wrdFR08j/174434cdrepu5vehdtxvpe.gif"
     ],
-    "tags": ["unity", "realtime", "lighting"],
+    "tags": ["unity", "realtime", "lighting", "vfx"],
     "hours": 4.8,
-    "description": "Use Unity's rendering features to create real-time visuals, lighting setups and post-processing.",
-    "software": ["Unity"],
+    "description": "Use Unity's shader node features to create captivating real-time VFX for games",
+    "software": ["Unity", "3ds Max", "Photoshop"],
     "language": "English",
     "subtitles": false,
-    "materials": true,
-    "downloadLink": "https://example.com/downloads/unity-fundamentals",
-    "sourceLink": "https://example.com/courses/unity-fundamentals"
+    "materials": false,
+    "downloadLink": "https://t.me/c/1603660516/80/459140",
+    "sourceLink": "https://ke.cgjoy.com/center/courses/detail/157"
   },
   {
     "id": "c14",
-    "title": "Godot Basics: Game Development",
+    "title": "Recreate Stardew Valley in Godot",
     "category": "Godot",
     "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/godot-1/600/400",
+    "thumbnail": "https://i.ibb.co/fYz9w36F/maxresdefault-946807587.jpg",
     "screenshots": [
-      "https://picsum.photos/seed/godot-1a/800/450",
-      "https://picsum.photos/seed/godot-1b/800/450"
+      "https://i.ibb.co/F2bv27W/3-MV3-Ms6-BL96-Gr7-Zz-ZXh-Xo-A-1917069671.gif",
+      "https://i.ibb.co/GfPyDsLc/recreate-stardew-valley-in-godot-42816989.webp"
     ],
     "tags": ["godot", "2d", "game dev"],
     "hours": 3.2,
@@ -276,7 +276,7 @@
     "language": "English",
     "subtitles": true,
     "materials": false,
-    "downloadLink": "https://example.com/downloads/godot-basics",
-    "sourceLink": "https://example.com/courses/godot-basics"
+    "downloadLink": "https://t.me/c/1603660516/3018/543975",
+    "sourceLink": "https://www.udemy.com/course/recreate-stardew-valley-in-godot/"
   }
 ]
