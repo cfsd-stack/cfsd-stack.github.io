@@ -298,5 +298,25 @@
     "materials": true,
     "downloadLink": "",
     "sourceLink": "https://coloso.co.kr/products/dictionary-jaeylo"
+  },
+  {
+    "id": "c16",
+    "title": "Blender 3D Character Styling and Direction with 160 Practical Examples",
+    "category": "Character Design",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/nq96wnzm/example-dictionary-shinminjeong3-38.gif",
+    "screenshots": [
+      "https://i.ibb.co/pjj2Gnh2/example-dictionary-shinminjeong3-39.gif",
+      "https://i.ibb.co/PzQhQT8z/example-dictionary-shinminjeong3-37.webp"
+    ],
+    "tags": ["blender"],
+    "hours": 44,
+    "description": "Learn to create high-quality 3D characters with 160 examples! Unlock the advanced curriculum that expands your character’s style and visual storytelling. Bring the personality you’ve imagined to life and complete it as a single polished artwork. Join Minjeong Shin’s trusted class and create richly detailed, one-of-a-kind characters like never before!",
+    "software": ["Blender"],
+    "language": "Korean",
+    "subtitles": true,
+    "materials": true,
+    "downloadLink": "https://t.me/c/1603660516/2438/535802",
+    "sourceLink": "https://coloso.global/en/products/3dcharacterartist-minjeongshin3-us"
   }
 ]
