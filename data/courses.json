@@ -498,5 +498,25 @@
     "materials": true,
     "downloadLink": "https://t.me/c/1603660516/289/440043",
     "sourceLink": "https://coloso.jp/products/animationdirector-yamashita-jp"
+  },
+  {
+    "id": "c26",
+    "title": "Introduction to Modeling in Maya",
+    "category": "3D Modeling",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/Z6cYP77Y/420588.jpg",
+    "screenshots": [
+      "https://i.ibb.co/5xM3CSR2/420589.jpg",
+      "https://i.ibb.co/zWkQLsQF/420591.jpg"
+    ],
+    "tags": ["introduction", "HardSurface"],
+    "hours": 10,
+    "description": "Learn everything you need to know in order to get started with modeling in Maya! Learn the basic modeling tools, how to model for SubD,  master topology, using sweep mesh, vert re-ordering, using deformers, and we're simply scratching the surface!",
+    "software": ["Maya"],
+    "language": "English",
+    "subtitles": true,
+    "materials": true,
+    "downloadLink": "https://t.me/c/1603660516/289/440043",
+    "sourceLink": "https://coloso.jp/products/animationdirector-yamashita-jp"
   }
 ]
