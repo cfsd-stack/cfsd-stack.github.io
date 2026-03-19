@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let courses = [];
 
-  fetch('data/courses.json')
+  const coursesUrl = new URL('data/courses.json', window.location.href);
+  const cacheBust = `cb=${Date.now()}`;
+  const fetchUrl = `${coursesUrl.toString()}${coursesUrl.search ? '&' : '?'}${cacheBust}`;
+
+  fetch(fetchUrl)
     .then(res => res.json())
     .then(data => {
       courses = data || [];
