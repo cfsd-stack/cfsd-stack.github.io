@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
     card.className = 'card';
     const img = document.createElement('img');
     img.src = course.thumbnail || 'https://picsum.photos/seed/placeholder/600/400';
+    // Fallback if image URL is invalid or blocked
+    img.onerror = () => { img.src = 'https://picsum.photos/seed/placeholder/600/400'; };
     img.alt = course.title;
     const body = document.createElement('div');
     body.className = 'card-body';
