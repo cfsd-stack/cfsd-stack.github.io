@@ -278,5 +278,25 @@
     "materials": false,
     "downloadLink": "https://t.me/c/1603660516/3018/543975",
     "sourceLink": "https://www.udemy.com/course/recreate-stardew-valley-in-godot/"
+  },
+  {
+    "id": "c15",
+    "title": "Immersive Blender 3D Animation Completed with Lighting",
+    "category": "Animation",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/5QDDGFN/kr-dictionary-jaeylo-example-3-16.webp",
+    "screenshots": [
+      "https://i.ibb.co/5XKV0SmV/kr-dictionary-jaeylo-example-3-17.webp",
+      "https://i.ibb.co/bj7HvYGv/kr-dictionary-jaeylo-example-4-3.webp"
+    ],
+    "tags": ["blender"],
+    "hours": 44,
+    "description": "라이팅으로 완성하는 몰입도 높은 블렌더 3D 애니메이션. We will produce a total of 3 animations, and learn how to convey the emotions and stories of the characters in an immersive way through 8 lighting production methods.",
+    "software": ["Blender"],
+    "language": "Korean",
+    "subtitles": false,
+    "materials": true,
+    "downloadLink": "",
+    "sourceLink": "https://coloso.co.kr/products/dictionary-jaeylo"
   }
 ]
