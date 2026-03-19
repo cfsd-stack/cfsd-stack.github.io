@@ -1,30 +1,28 @@
-// Simple data-driven courses catalog
+// Simple data-driven courses catalog (framework-agnostic)
 document.addEventListener('DOMContentLoaded', () => {
   const searchEl = document.getElementById('search');
   const categoryEl = document.getElementById('category');
   const levelEl = document.getElementById('level');
   const grid = document.getElementById('courses');
 
+  let courses = [];
+
   fetch('data/courses.json')
     .then(res => res.json())
     .then(data => {
-      window._courses = data;
-      populateCategories(data);
-      // initial render of all courses
-      renderList(data);
-      // wire up filters/search against the full list
-      searchEl.addEventListener('input', applyFilters);
-      categoryEl.addEventListener('change', applyFilters);
-      levelEl.addEventListener('change', applyFilters);
-      // Setup modal interactions after cards render
-      setupModal(data);
+      courses = data || [];
+      populateCategories(courses);
+      renderList(courses);
+      searchEl.addEventListener('input', () => applyFilters(courses));
+      categoryEl.addEventListener('change', () => applyFilters(courses));
+      levelEl.addEventListener('change', () => applyFilters(courses));
+      setupModal();
     })
     .catch(() => {
       grid.innerHTML = '<div class="empty">Failed to load courses.</div>';
     });
 
   function populateCategories(data) {
-    // Collect categories and populate select
     const cats = Array.from(new Set(data.map(c => c.category))).sort();
     for (const c of cats) {
       const opt = document.createElement('option');
@@ -34,22 +32,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function applyFilters() {
-    if (!Array.isArray(window._courses)) {
-      return;
-    }
-    // Apply filters on the full list
-    const q = (searchEl.value || '').toLowerCase();
+  function applyFilters(source) {
+    const base = Array.isArray(source) ? source : courses;
+    const q = (searchEl.value || '').toLowerCase().trim();
     const cat = categoryEl.value;
     const lvl = levelEl.value;
-    const base = window._courses;
+
     const results = base.filter(course => {
       const matchCat = cat ? course.category === cat : true;
       const matchLvl = lvl ? course.level.toLowerCase() === lvl.toLowerCase() : true;
-      const titleText = (course.title || '').toLowerCase();
-      const matchText = q ? titleText.includes(q) : true;
+
+      const haystack = [
+        course.title || '',
+        (course.tags || []).join(' '),
+        (course.software || []).join(' ')
+      ]
+        .join(' ')
+        .toLowerCase();
+
+      const matchText = q ? haystack.includes(q) : true;
       return matchCat && matchLvl && matchText;
     });
+
     renderList(results);
   }
 
@@ -61,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     for (const c of items) {
       const card = cardFor(c);
-      // attach click to open modal with more details
       card.style.cursor = 'pointer';
       card.addEventListener('click', () => openModal(c));
       grid.appendChild(card);
@@ -73,8 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
     card.className = 'card';
     const img = document.createElement('img');
     img.src = course.thumbnail || 'https://picsum.photos/seed/placeholder/600/400';
-    // Fallback if image URL is invalid or blocked
-    img.onerror = () => { img.src = 'https://picsum.photos/seed/placeholder/600/400'; };
+    img.onerror = () => {
+      img.src = 'https://picsum.photos/seed/placeholder/600/400';
+    };
     img.alt = course.title;
     const body = document.createElement('div');
     body.className = 'card-body';
@@ -85,28 +89,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const badgeRow = document.createElement('div');
     badgeRow.className = 'badge-row';
-    const cat = document.createElement('span'); cat.className = 'badge'; cat.textContent = course.category;
-    const lvl = document.createElement('span'); lvl.className = 'badge'; lvl.textContent = course.level;
+    const cat = document.createElement('span');
+    cat.className = 'badge';
+    cat.textContent = course.category;
+    const lvl = document.createElement('span');
+    lvl.className = 'badge level';
+    lvl.textContent = course.level;
     badgeRow.appendChild(cat);
     badgeRow.appendChild(lvl);
 
+    const tagsRow = document.createElement('div');
+    tagsRow.className = 'tag-row';
+    (course.tags || []).slice(0, 4).forEach(tag => {
+      const t = document.createElement('span');
+      t.className = 'tag-pill';
+      t.textContent = tag;
+      tagsRow.appendChild(t);
+    });
+
     const meta = document.createElement('div');
     meta.className = 'meta';
-    meta.textContent = `Language: ${course.language} • Software: ${course.software.join(', ')} • Hours: ${course.hours}`;
+    meta.textContent = `Language: ${course.language} • Software: ${(course.software || []).join(
+      ', '
+    )} • Hours: ${course.hours}`;
 
     const info = document.createElement('div');
     info.className = 'meta';
-    info.textContent = `Subtitles: ${course.subtitles ? 'Yes' : 'No'} • Materials: ${course.materials ? 'Yes' : 'No'}`;
+    info.textContent = `Subtitles: ${course.subtitles ? 'Yes' : 'No'} • Materials: ${
+      course.materials ? 'Yes' : 'No'
+    }`;
 
     const actions = document.createElement('div');
     actions.className = 'actions';
-    const aSource = document.createElement('a'); aSource.href = course.sourceLink; aSource.className = 'button'; aSource.target = '_blank'; aSource.textContent = 'Source';
-    const aDownload = document.createElement('a'); aDownload.href = course.downloadLink; aDownload.className = 'button'; aDownload.target = '_blank'; aDownload.textContent = 'Download';
+    const aSource = document.createElement('a');
+    aSource.href = course.sourceLink;
+    aSource.className = 'button secondary';
+    aSource.target = '_blank';
+    aSource.textContent = 'Source';
+    const aDownload = document.createElement('a');
+    aDownload.href = course.downloadLink;
+    aDownload.className = 'button';
+    aDownload.target = '_blank';
+    aDownload.textContent = 'Download';
     actions.appendChild(aSource);
     actions.appendChild(aDownload);
 
     body.appendChild(title);
     body.appendChild(badgeRow);
+    if (tagsRow.childElementCount) body.appendChild(tagsRow);
     body.appendChild(meta);
     body.appendChild(info);
     body.appendChild(actions);
@@ -117,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Modal handling
-  function setupModal(data) {
+  function setupModal() {
     const modal = document.getElementById('course-modal');
     const closeBtn = document.getElementById('modal-close');
     const modalTitle = document.getElementById('modal-title');
@@ -125,40 +155,60 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalMedia = document.getElementById('modal-media');
     const modalInfo = document.getElementById('modal-info');
     const modalMaterials = document.getElementById('modal-materials');
+    const modalTags = document.getElementById('modal-tags');
     const modalActions = document.getElementById('modal-actions');
 
     function open(course) {
-      // Populate modal
       modalTitle.textContent = course.title;
-      modalDesc.textContent = course.description || (course.title + ' is a ' + course.level + ' ' + course.category + ' course using ' + course.software.join(', ') + '. Estimated duration: ' + course.hours + ' hours.');
-      modalInfo.textContent = `Category: ${course.category} • Level: ${course.level} • Language: ${course.language} • Hours: ${course.hours}`;
-      modalMaterials.textContent = `Subtitles: ${course.subtitles ? 'Yes' : 'No'} • Materials: ${course.materials ? 'Yes' : 'No'}`;
-      // media gallery
+      modalDesc.textContent =
+        course.description ||
+        `${course.title} is a ${course.level} ${course.category} course using ${(course.software || []).join(
+          ', '
+        )}. Estimated duration: ${course.hours} hours.`;
+      modalInfo.textContent = `Category: ${course.category} • Level: ${course.level} • Language: ${
+        course.language
+      } • Hours: ${course.hours}`;
+      modalMaterials.textContent = `Subtitles: ${course.subtitles ? 'Yes' : 'No'} • Materials: ${
+        course.materials ? 'Yes' : 'No'
+      }`;
+
+      modalTags.innerHTML = '';
+      (course.tags || []).forEach(tag => {
+        const t = document.createElement('span');
+        t.className = 'tag-pill';
+        t.textContent = tag;
+        modalTags.appendChild(t);
+      });
+
       modalMedia.innerHTML = '';
       if (course.screenshots && course.screenshots.length > 0) {
         for (const src of course.screenshots) {
           const img = document.createElement('img');
-          img.src = src; img.alt = course.title + ' screenshot';
-          img.style.height = '120px'; img.style.borderRadius = '6px';
+          img.src = src;
+          img.alt = course.title + ' screenshot';
           modalMedia.appendChild(img);
         }
       }
-      // actions
+
       modalActions.innerHTML = '';
-      const aSource = document.createElement('a'); aSource.href = course.sourceLink; aSource.className = 'button'; aSource.target = '_blank'; aSource.textContent = 'Source';
-      const aDownload = document.createElement('a'); aDownload.href = course.downloadLink; aDownload.className = 'button'; aDownload.target = '_blank'; aDownload.textContent = 'Download';
+      const aSource = document.createElement('a');
+      aSource.href = course.sourceLink;
+      aSource.className = 'button secondary';
+      aSource.target = '_blank';
+      aSource.textContent = 'Source';
+      const aDownload = document.createElement('a');
+      aDownload.href = course.downloadLink;
+      aDownload.className = 'button';
+      aDownload.target = '_blank';
+      aDownload.textContent = 'Download';
       modalActions.appendChild(aSource);
       modalActions.appendChild(aDownload);
-      // show
-      modal.style.display = 'block';
+
       modal.classList.add('open');
       modal.setAttribute('aria-hidden', 'false');
-      // trap focus basics
-      modal.focus();
     }
 
     function close() {
-      modal.style.display = 'none';
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden', 'true');
     }

@@ -1,33 +1,43 @@
 [
   {
     "id": "c1",
-    "title": "Fundamentals",
+    "title": "Character Design Fundamentals",
     "category": "Character Design",
     "level": "Beginner",
     "thumbnail": "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg",
-    "screenshots": ["https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg", "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg"],
-    "downloadLink": "https://example.com/downloads/character-design-fundamentals",
-    "sourceLink": "https://example.com/courses/character-design-fundamentals",
+    "screenshots": [
+      "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg",
+      "https://picsum.photos/seed/char-fundamentals-2/800/450"
+    ],
+    "tags": ["characters", "fundamentals", "design", "poses"],
+    "hours": 6.5,
+    "description": "Learn the foundations of appealing character design: shape language, proportions, gesture and readable silhouettes.",
+    "software": ["Photoshop", "Blender"],
+    "language": "English",
     "subtitles": true,
     "materials": true,
-    "language": "English",
-    "software": ["Blender", "Photoshop"],
-    "hours": 6.5
+    "downloadLink": "https://example.com/downloads/character-design-fundamentals",
+    "sourceLink": "https://example.com/courses/character-design-fundamentals"
   },
   {
     "id": "c2",
     "title": "Advanced Character Design Techniques",
     "category": "Character Design",
     "level": "Advanced",
-    "thumbnail": "https://picsum.photos/seed/char-design-2/600/400",
-    "screenshots": ["https://picsum.photos/seed/char-design-2a/800/450"],
-    "downloadLink": "https://example.com/downloads/character-design-advanced",
-    "sourceLink": "https://example.com/courses/character-design-advanced",
+    "thumbnail": "https://picsum.photos/seed/char-advanced-1/600/400",
+    "screenshots": [
+      "https://picsum.photos/seed/char-advanced-2/800/450",
+      "https://picsum.photos/seed/char-advanced-3/800/450"
+    ],
+    "tags": ["characters", "portfolio", "rendering", "costume"],
+    "hours": 9,
+    "description": "Push your character concepts to production quality with advanced rendering, costuming and personality-driven design.",
+    "software": ["Photoshop", "ZBrush"],
+    "language": "English",
     "subtitles": true,
     "materials": true,
-    "language": "English",
-    "software": ["ZBrush", "Photoshop"],
-    "hours": 9.0
+    "downloadLink": "https://example.com/downloads/character-design-advanced",
+    "sourceLink": "https://example.com/courses/character-design-advanced"
   },
   {
     "id": "c3",
@@ -35,14 +45,19 @@
     "category": "VFX",
     "level": "Beginner",
     "thumbnail": "https://picsum.photos/seed/vfx-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/vfx-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/vfx-blender-intro",
-    "sourceLink": "https://example.com/courses/vfx-blender-intro",
+    "screenshots": [
+      "https://picsum.photos/seed/vfx-1a/800/450",
+      "https://picsum.photos/seed/vfx-1b/800/450"
+    ],
+    "tags": ["vfx", "compositing", "simulation"],
+    "hours": 5.5,
+    "description": "A gentle introduction to Blender's VFX pipeline, camera tracking, simple simulations and compositing.",
+    "software": ["Blender"],
+    "language": "English",
     "subtitles": false,
     "materials": true,
-    "language": "English",
-    "software": ["Blender"],
-    "hours": 5.5
+    "downloadLink": "https://example.com/downloads/vfx-blender-intro",
+    "sourceLink": "https://example.com/courses/vfx-blender-intro"
   },
   {
     "id": "c4",
@@ -50,14 +65,19 @@
     "category": "Rigging",
     "level": "Intermediate",
     "thumbnail": "https://picsum.photos/seed/rigging-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/rigging-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/rigging-essentials",
-    "sourceLink": "https://example.com/courses/rigging-essentials",
+    "screenshots": [
+      "https://picsum.photos/seed/rigging-1a/800/450",
+      "https://picsum.photos/seed/rigging-1b/800/450"
+    ],
+    "tags": ["rigging", "controllers", "deformation"],
+    "hours": 7.2,
+    "description": "Build production-ready character rigs with clean deformation, IK/FK systems and animator-friendly controls.",
+    "software": ["Blender", "Maya"],
+    "language": "English",
     "subtitles": true,
     "materials": true,
-    "language": "English",
-    "software": ["Blender", "Maya"],
-    "hours": 7.2
+    "downloadLink": "https://example.com/downloads/rigging-essentials",
+    "sourceLink": "https://example.com/courses/rigging-essentials"
   },
   {
     "id": "c5",
@@ -65,14 +85,19 @@
     "category": "Animation",
     "level": "Beginner",
     "thumbnail": "https://picsum.photos/seed/anim-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/anim-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/animation-fundamentals",
-    "sourceLink": "https://example.com/courses/animation-fundamentals",
+    "screenshots": [
+      "https://picsum.photos/seed/anim-1a/800/450",
+      "https://picsum.photos/seed/anim-1b/800/450"
+    ],
+    "tags": ["animation", "timing", "spacing", "principles"],
+    "hours": 4.2,
+    "description": "Understand the 12 principles of animation with a focus on timing, spacing, arcs and weight.",
+    "software": ["Blender"],
+    "language": "English",
     "subtitles": true,
     "materials": false,
-    "language": "English",
-    "software": ["Blender"],
-    "hours": 4.2
+    "downloadLink": "https://example.com/downloads/animation-fundamentals",
+    "sourceLink": "https://example.com/courses/animation-fundamentals"
   },
   {
     "id": "c6",
@@ -80,14 +105,19 @@
     "category": "Compositing",
     "level": "Intermediate",
     "thumbnail": "https://picsum.photos/seed/comp-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/comp-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/compositing-vfx",
-    "sourceLink": "https://example.com/courses/compositing-vfx",
+    "screenshots": [
+      "https://picsum.photos/seed/comp-1a/800/450",
+      "https://picsum.photos/seed/comp-1b/800/450"
+    ],
+    "tags": ["compositing", "vfx", "grading"],
+    "hours": 7,
+    "description": "Learn to combine live-action plates, CG renders and FX passes into cohesive final shots.",
+    "software": ["After Effects", "Blender"],
+    "language": "English",
     "subtitles": true,
     "materials": true,
-    "language": "English",
-    "software": ["After Effects"],
-    "hours": 7.0
+    "downloadLink": "https://example.com/downloads/compositing-vfx",
+    "sourceLink": "https://example.com/courses/compositing-vfx"
   },
   {
     "id": "c7",
@@ -95,14 +125,19 @@
     "category": "Texturing",
     "level": "Advanced",
     "thumbnail": "https://picsum.photos/seed/tex-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/tex-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/texturing-masterclass",
-    "sourceLink": "https://example.com/courses/texturing-masterclass",
+    "screenshots": [
+      "https://picsum.photos/seed/tex-1a/800/450",
+      "https://picsum.photos/seed/tex-1b/800/450"
+    ],
+    "tags": ["texturing", "pbr", "substance painter"],
+    "hours": 8.3,
+    "description": "Author production-grade PBR textures, smart materials and masks for characters and props.",
+    "software": ["Substance Painter"],
+    "language": "English",
     "subtitles": true,
     "materials": true,
-    "language": "English",
-    "software": ["Substance Painter"],
-    "hours": 8.3
+    "downloadLink": "https://example.com/downloads/texturing-masterclass",
+    "sourceLink": "https://example.com/courses/texturing-masterclass"
   },
   {
     "id": "c8",
@@ -110,59 +145,79 @@
     "category": "UV",
     "level": "Beginner",
     "thumbnail": "https://picsum.photos/seed/uv-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/uv-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/uv-essentials",
-    "sourceLink": "https://example.com/courses/uv-essentials",
+    "screenshots": [
+      "https://picsum.photos/seed/uv-1a/800/450",
+      "https://picsum.photos/seed/uv-1b/800/450"
+    ],
+    "tags": ["uvs", "unwrapping", "texel density"],
+    "hours": 3.5,
+    "description": "Unwrap clean UVs for characters and environments, manage texel density and layout for texturing.",
+    "software": ["Blender"],
+    "language": "English",
     "subtitles": false,
     "materials": true,
-    "language": "English",
-    "software": ["Blender"],
-    "hours": 3.5
+    "downloadLink": "https://example.com/downloads/uv-essentials",
+    "sourceLink": "https://example.com/courses/uv-essentials"
   },
   {
     "id": "c9",
     "title": "Render Techniques & Lighting",
-    "category": "Render",
+    "category": "Rendering",
     "level": "Intermediate",
     "thumbnail": "https://picsum.photos/seed/render-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/render-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/render-techniques",
-    "sourceLink": "https://example.com/courses/render-techniques",
+    "screenshots": [
+      "https://picsum.photos/seed/render-1a/800/450",
+      "https://picsum.photos/seed/render-1b/800/450"
+    ],
+    "tags": ["rendering", "lighting", "shading"],
+    "hours": 6,
+    "description": "Light and render cinematic stills and turntables with proper exposure, color and mood.",
+    "software": ["Blender", "Cycles"],
+    "language": "English",
     "subtitles": true,
     "materials": false,
-    "language": "English",
-    "software": ["Blender", "Cycles"],
-    "hours": 6.0
+    "downloadLink": "https://example.com/downloads/render-techniques",
+    "sourceLink": "https://example.com/courses/render-techniques"
   },
   {
     "id": "c10",
-    "title": "Environment Art: Sculpting & World Building",
-    "category": "Environment Art",
-    "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/env-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/env-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/environment-art",
-    "sourceLink": "https://example.com/courses/environment-art",
-    "subtitles": false,
-    "materials": true,
-    "language": "English",
-    "software": ["Blender", "Substance Designer"],
-    "hours": 7.2
-  },
-  {
-    "id": "c11",
     "title": "Motion Design with After Effects",
     "category": "Motion Design",
     "level": "Intermediate",
     "thumbnail": "https://picsum.photos/seed/motion-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/motion-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/motion-design-after-effects",
-    "sourceLink": "https://example.com/courses/motion-design-after-effects",
+    "screenshots": [
+      "https://picsum.photos/seed/motion-1a/800/450",
+      "https://picsum.photos/seed/motion-1b/800/450"
+    ],
+    "tags": ["motion design", "after effects", "titles"],
+    "hours": 5,
+    "description": "Create polished motion graphics, title sequences and UI animations in After Effects.",
+    "software": ["After Effects"],
+    "language": "English",
     "subtitles": true,
     "materials": true,
+    "downloadLink": "https://example.com/downloads/motion-design-after-effects",
+    "sourceLink": "https://example.com/courses/motion-design-after-effects"
+  },
+  {
+    "id": "c11",
+    "title": "Environment Art: Sculpting & World Building",
+    "category": "Concept Art",
+    "level": "Beginner",
+    "thumbnail": "https://picsum.photos/seed/env-1/600/400",
+    "screenshots": [
+      "https://picsum.photos/seed/env-1a/800/450",
+      "https://picsum.photos/seed/env-1b/800/450"
+    ],
+    "tags": ["environment", "world building", "concept art"],
+    "hours": 7.2,
+    "description": "Design, block out and detail compelling environments and worlds for games and film.",
+    "software": ["Blender", "Substance Designer"],
     "language": "English",
-    "software": ["After Effects"],
-    "hours": 5.0
+    "subtitles": false,
+    "materials": true,
+    "downloadLink": "https://example.com/downloads/environment-art",
+    "sourceLink": "https://example.com/courses/environment-art"
   },
   {
     "id": "c12",
@@ -170,14 +225,19 @@
     "category": "Unreal Engine",
     "level": "Beginner",
     "thumbnail": "https://picsum.photos/seed/unreal-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/unreal-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/unreal-fundamentals",
-    "sourceLink": "https://example.com/courses/unreal-fundamentals",
+    "screenshots": [
+      "https://picsum.photos/seed/unreal-1a/800/450",
+      "https://picsum.photos/seed/unreal-1b/800/450"
+    ],
+    "tags": ["unreal engine", "realtime", "blueprints"],
+    "hours": 6.5,
+    "description": "Get comfortable with Unreal Engine's interface, materials, lighting and Blueprint scripting.",
+    "software": ["Unreal Engine"],
+    "language": "English",
     "subtitles": true,
     "materials": true,
-    "language": "English",
-    "software": ["Unreal Engine"],
-    "hours": 6.5
+    "downloadLink": "https://example.com/downloads/unreal-fundamentals",
+    "sourceLink": "https://example.com/courses/unreal-fundamentals"
   },
   {
     "id": "c13",
@@ -185,14 +245,19 @@
     "category": "Unity",
     "level": "Beginner",
     "thumbnail": "https://picsum.photos/seed/unity-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/unity-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/unity-fundamentals",
-    "sourceLink": "https://example.com/courses/unity-fundamentals",
+    "screenshots": [
+      "https://picsum.photos/seed/unity-1a/800/450",
+      "https://picsum.photos/seed/unity-1b/800/450"
+    ],
+    "tags": ["unity", "realtime", "lighting"],
+    "hours": 4.8,
+    "description": "Use Unity's rendering features to create real-time visuals, lighting setups and post-processing.",
+    "software": ["Unity"],
+    "language": "English",
     "subtitles": false,
     "materials": true,
-    "language": "English",
-    "software": ["Unity"],
-    "hours": 4.8
+    "downloadLink": "https://example.com/downloads/unity-fundamentals",
+    "sourceLink": "https://example.com/courses/unity-fundamentals"
   },
   {
     "id": "c14",
@@ -200,28 +265,18 @@
     "category": "Godot",
     "level": "Beginner",
     "thumbnail": "https://picsum.photos/seed/godot-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/godot-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/godot-basics",
-    "sourceLink": "https://example.com/courses/godot-basics",
+    "screenshots": [
+      "https://picsum.photos/seed/godot-1a/800/450",
+      "https://picsum.photos/seed/godot-1b/800/450"
+    ],
+    "tags": ["godot", "2d", "game dev"],
+    "hours": 3.2,
+    "description": "Create your first 2D game in Godot, covering scenes, scripting and basic UI.",
+    "software": ["Godot"],
+    "language": "English",
     "subtitles": true,
     "materials": false,
-    "language": "English",
-    "software": ["Godot"],
-    "hours": 3.2
-  },
-  {
-    "id": "c15",
-    "title": "3D Modeling in Blender: From Scratch",
-    "category": "3d Modeling",
-    "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/model-1/600/400",
-    "screenshots": ["https://picsum.photos/seed/model-1a/800/450"],
-    "downloadLink": "https://example.com/downloads/3d-modeling-blender",
-    "sourceLink": "https://example.com/courses/3d-modeling-blender",
-    "subtitles": true,
-    "materials": true,
-    "language": "English",
-    "software": ["Blender"],
-    "hours": 5.4
+    "downloadLink": "https://example.com/downloads/godot-basics",
+    "sourceLink": "https://example.com/courses/godot-basics"
   }
 ]

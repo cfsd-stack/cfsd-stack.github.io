@@ -1,52 +1,136 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Course List</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Browse and filter courses by category, level, and more." />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Course List</h1>
-      <p>Find courses by character design, VFX, rigging, animation, rendering, and more.</p>
-    </div>
-  </header>
-  <main class="container">
-    <section class="filters" aria-label="Course Filters">
-      <input id="search" type="text" placeholder="Search courses by title or software..." />
-      <select id="category" aria-label="Category filter"><option value="">All Categories</option></select>
-      <select id="level" aria-label="Level filter">
-        <option value="">All Levels</option>
-        <option value="Beginner">Beginner</option>
-        <option value="Intermediate">Intermediate</option>
-        <option value="Advanced">Advanced</option>
-      </select>
-    </section>
-
-  <section id="courses" class="courses-grid" aria-label="Courses"></section>
-
-  <!-- Course Details Modal -->
-  <div id="course-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Course details">
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close" id="modal-close">×</button>
-      <div class="modal-media" id="modal-media"></div>
-      <div class="modal-body">
-        <h2 id="modal-title" class="card-title" style="margin:6px 0 8px;"></h2>
-        <p id="modal-description" style="margin:0 0 8px; color:#eee;"></p>
-        <div id="modal-info" class="meta" style="margin:6px 0 8px;"></div>
-        <div id="modal-materials" class="meta" style="margin:6px 0 8px;"></div>
-        <div id="modal-actions" class="actions" style="margin-top:8px;"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CFSD Course Library</title>
+    <meta
+      name="description"
+      content="Browse and filter courses on character design, VFX, animation, rigging, rendering, game engines and more."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>CFSD Course Library</h1>
+          <p>Find the right course across design, VFX, animation and game engines.</p>
+        </div>
+        <nav class="top-nav" aria-label="Site">
+          <a href="#courses-section">Courses</a>
+          <a href="#tos">Terms</a>
+          <a href="#disclaimer">Disclaimer</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-    </div>
-  </div>
-  </main>
-  <footer class="container" style="text-align:center; padding:2rem 0; color:#666; font-size:0.9rem">
-    © Course List Demo
-  </footer>
+    </header>
 
-  <script src="scripts.js"></script>
-</body>
+    <main>
+      <section id="courses-section" class="container">
+        <section class="filters" aria-label="Course filters">
+          <div class="filter-item filter-search">
+            <label for="search">Search</label>
+            <input
+              id="search"
+              type="text"
+              placeholder="Search by course name, tag or software…"
+              autocomplete="off"
+            />
+          </div>
+          <div class="filter-item">
+            <label for="category">Category</label>
+            <select id="category" aria-label="Category filter">
+              <option value="">All categories</option>
+            </select>
+          </div>
+          <div class="filter-item">
+            <label for="level">Level</label>
+            <select id="level" aria-label="Level filter">
+              <option value="">All levels</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+          </div>
+        </section>
+
+        <section id="courses" class="courses-grid" aria-label="Courses"></section>
+      </section>
+
+      <!-- Course Details Modal -->
+      <div id="course-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Course details">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close" id="modal-close">×</button>
+          <div class="modal-media" id="modal-media"></div>
+          <div class="modal-body">
+            <h2 id="modal-title" class="card-title"></h2>
+            <p id="modal-description" class="modal-description"></p>
+            <div id="modal-tags" class="tag-row"></div>
+            <div id="modal-info" class="meta"></div>
+            <div id="modal-materials" class="meta"></div>
+            <div id="modal-actions" class="actions"></div>
+          </div>
+        </div>
+      </div>
+
+      <section id="tos" class="legal-section">
+        <div class="container">
+          <h2>Terms of Service</h2>
+          <p>
+            The CFSD Course Library is a curated catalog of learning resources. Links may point to external
+            providers or mirrors. By using this site you agree to:
+          </p>
+          <ul>
+            <li>Use course materials only as permitted by the original rights holders.</li>
+            <li>Not redistribute any paid content without explicit permission.</li>
+            <li>Accept that course availability, links and metadata may change at any time.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="disclaimer" class="legal-section">
+        <div class="container">
+          <h2>Disclaimer</h2>
+          <p>
+            This site does not own the courses listed unless explicitly stated. All trademarks, logos and
+            brand names are the property of their respective owners.
+          </p>
+          <p>
+            Download links and source URLs are provided for convenience. Always verify that you have the legal
+            right to access and use any material you download. The site owner is not responsible for the
+            accuracy, legality or content of any external site.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="legal-section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Have a takedown request, correction, or suggestion for a new course?
+          </p>
+          <ul>
+            <li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
+            <li>
+              GitHub: <a href="https://github.com/cfsd-stack" target="_blank" rel="noreferrer">cfsd-stack</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© CFSD Course Library</span>
+        <span>
+          <a href="#tos">Terms</a> ·
+          <a href="#disclaimer">Disclaimer</a> ·
+          <a href="#contact">Contact</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
