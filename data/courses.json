@@ -164,40 +164,40 @@
     "title": "Rendering University",
     "category": "Rendering",
     "level": "Intermediate",
-    "thumbnail": "https://picsum.photos/seed/render-1/600/400",
+    "thumbnail": "https://i.ibb.co/RTxcpgbS/photo-2025-04-06-10-15-44.jpg",
     "screenshots": [
-      "https://picsum.photos/seed/render-1a/800/450",
-      "https://picsum.photos/seed/render-1b/800/450"
+      "https://i.ibb.co/bRRbXrMb/fypj-IH0-RRCn-WJw-Zwsia-T-yt1-copy-1280.jpg",
+      "https://i.ibb.co/xqtfr7tb/pj-VYms8z-Tmi2gfyl-VRp-M-ponte-ryuurui-untitled21.jpg"
     ],
-    "tags": ["rendering", "lighting", "shading", "Framing","Compositing", "Visual Design", "Composition"],
-    "hours": 6,
+    "tags": ["rendering", "lighting", "shading", "Framing","Compositing", "Visual Design", "Composition", "Portfolio"],
+    "hours": 9,
     "description": "This training focuses intensely on the crucial aspects of presentation for 3D artists, aiming to elevate portfolio quality and attract professional opportunities",
-    "software": ["Blender", "Cycles"],
+    "software": ["Blender", "Cycles", "Eevee"],
     "language": "English",
     "subtitles": true,
-    "materials": false,
-    "downloadLink": "https://example.com/downloads/render-techniques",
-    "sourceLink": "https://example.com/courses/render-techniques"
+    "materials": true,
+    "downloadLink": "https://t.me/three_club/1205",
+    "sourceLink": "https://www.blenderbros.com/rendering-university"
   },
   {
     "id": "c10",
     "title": "Motion Design with After Effects",
     "category": "Motion Design",
     "level": "Intermediate",
-    "thumbnail": "https://picsum.photos/seed/motion-1/600/400",
+    "thumbnail": "https://i.ibb.co/4Zvs6C9T/2026-03-19-153334.png",
     "screenshots": [
-      "https://picsum.photos/seed/motion-1a/800/450",
-      "https://picsum.photos/seed/motion-1b/800/450"
+      "https://i.ibb.co/gZGdSQTf/2026-03-19-153409.png",
+      "https://i.ibb.co/fVqVKC9f/2026-03-19-153504.png"
     ],
-    "tags": ["motion design", "after effects", "titles"],
+    "tags": ["motion design", "C4D", "after effects", "octane renderer", "rendering", "product design", "advertising", "advertisement", "hyperrealism", "presentation"],
     "hours": 5,
-    "description": "Create polished motion graphics, title sequences and UI animations in After Effects.",
-    "software": ["After Effects"],
-    "language": "English",
-    "subtitles": true,
-    "materials": true,
-    "downloadLink": "https://example.com/downloads/motion-design-after-effects",
-    "sourceLink": "https://example.com/courses/motion-design-after-effects"
+    "description": "Create polished product renders of various products with Cinema 4D and Octane Renderer.",
+    "software": ["Cinema 4D", "Octane"],
+    "language": "Chinese",
+    "subtitles": false,
+    "materials": false,
+    "downloadLink": "https://t.me/c/1525044096/1/42745",
+    "sourceLink": "https://www.zcool.com.cn/work/ZNjQ0NDk0NTY=.html"
   },
   {
     "id": "c11",
