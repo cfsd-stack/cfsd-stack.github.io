@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       window._courses = data;
       populateCategories(data);
-      render(data);
+      render();
       searchEl.addEventListener('input', render);
       categoryEl.addEventListener('change', render);
       levelEl.addEventListener('change', render);
@@ -32,12 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function render(list) {
+  function render(evtOrList) {
     // Apply filters
     const q = (searchEl.value || '').toLowerCase();
     const cat = categoryEl.value;
     const lvl = levelEl.value;
-    const results = (list || window._courses).filter(course => {
+    const base = Array.isArray(evtOrList) ? evtOrList : (window._courses || []);
+    const results = base.filter(course => {
       const matchCat = cat ? course.category === cat : true;
       const matchLvl = lvl ? course.level.toLowerCase() === lvl.toLowerCase() : true;
       const text = `${course.title} ${course.software.join(' ')} ${course.language}`.toLowerCase();
