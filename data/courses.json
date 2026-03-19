@@ -376,7 +376,7 @@
     "language": "Korean",
     "subtitles": true,
     "materials": true,
-    "downloadLink": "https://t.me/megacoursenew/2458",
+    "downloadLink": "https://t.me/c/1603660516/2438/434814",
     "sourceLink": "https://coloso.global/en/products/3dvideocreator-popurika-us"
   },
   {
@@ -450,13 +450,33 @@
       "https://i.ibb.co/m5CTQwYq/jp-animationdirector-yamashita-sellingpoint-03-1.gif"
     ],
     "tags": ["anime", "animation", "2d"],
-    "hours": 48,
+    "hours": 63,
     "description": "「NARUTO ナルト 疾風伝」や「呪術廻戦」(第1期) OPなど、数々の人気アニメーション作品を手掛ける、アニメーション監督の山下清悟。今回の講座では、15年以上の商業アニメーション制作経験を持つ山下清悟ならではの、商業アニメーションのワークフローと、完成度の高いアニメーション制作方法を、段階的にお教えします。",
     "software": ["Blender","After Effects", "CLIP STUDIO PAINT", "Illustrator", "Photoshop", "Procreate Dreams"],
     "language": "Japanese",
     "subtitles": true,
     "materials": true,
     "downloadLink": "https://t.me/c/1603660516/2438/440898",
+    "sourceLink": "https://coloso.jp/products/animationdirector-yamashita-jp"
+  },
+  {
+    "id": "c24",
+    "title": "Artistic Cartoon-Style Character Modeling with ZBrush",
+    "category": "Character Design",
+    "level": "Intermediate",
+    "thumbnail": "https://i.ibb.co/d0Kmt9m7/kr-3dcharacterartist-kangseihoon-sellingpoint-02.webp",
+    "screenshots": [
+      "https://i.ibb.co/XfDn57PN/kr-3dcharacterartist-kangseihoon-example3-2.webp",
+      "https://i.ibb.co/35GgdMdM/Untitled.gif"
+    ],
+    "tags": ["stylized", "anime", "sculpting"],
+    "hours": 58,
+    "description": "We prepared a curriculum comprising 102 chapters, from the utilization of ZBrush tools that extract 2D elements from 3D designs, to using the Best Preview Render (BPR) filter for rendering and exploring poses that enhance a character's charm. Create cartoon-style 3D characters that captivate audiences and grow into a 3D character modeler equipped with skills and artistic sensibilities using ZBrush alone.",
+    "software": ["Zbrush"],
+    "language": "Korean",
+    "subtitles": true,
+    "materials": true,
+    "downloadLink": "https://t.me/c/1603660516/289/440043",
     "sourceLink": "https://coloso.jp/products/animationdirector-yamashita-jp"
   }
 ]
