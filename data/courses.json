@@ -9,15 +9,15 @@
       "https://i.ibb.co/Pzft7sr1/1981490.webp",
       "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg"
     ],
-    "tags": ["characters", "fundamentals", "design", "poses"],
+    "tags": ["hair", "xgen", "maya", "arnold"],
     "hours": 7,
     "description": "The goal of this product, is to give you all the keys to create realistic hair in X-gen / Maya using xgen-core. From learning all the X-gen fundamentals, to create your first Haircut.",
     "software": ["Maya", "Zbrush", "Arnold"],
     "language": "English",
     "subtitles": false,
     "materials": true,
-    "downloadLink": "https://example.com/downloads/character-design-fundamentals",
-    "sourceLink": "https://example.com/courses/character-design-fundamentals"
+    "downloadLink": "https://t.me/CGPERS/13920",
+    "sourceLink": "https://flippednormals.com/product/how-i-create-hair-with-xgen-maya-48270"
   },
   {
     "id": "c2",
@@ -29,55 +29,55 @@
       "https://i.ibb.co/39839SJd/330646.webp",
       "https://i.ibb.co/YBgC2V4K/330645.webp"
     ],
-    "tags": ["characters", "portfolio", "rendering", "costume"],
+    "tags": ["hair", "xgen", "maya", "arnold"],
     "hours": 7,
     "description": "In Introduction to XGen, you'll learn the fundamentals of working with XGen and creating your first grooms. You'll learn all the tools you must know and also how to avoid common mistakes in XGen. Later in the series, you'll learn the full process for creating a simple and professional groom from start to finish; no time-lapses. Every step will be shown.",
     "software": ["Maya"],
     "language": "English",
     "subtitles": false,
     "materials": false,
-    "downloadLink": "https://example.com/downloads/character-design-advanced",
+    "downloadLink": "https://t.me/CGPERS/7236",
     "sourceLink": "https://flipnm.co/introXGen"
   },
   {
     "id": "c3",
-    "title": "Intro to VFX in Blender",
+    "title": "Bringing Artistic Game Effects to Life with Niagara",
     "category": "VFX",
-    "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/vfx-1/600/400",
+    "level": "Intermediate",
+    "thumbnail": "https://i.ibb.co/8nD5QKmW/bringing-artistic-game-effects-to-life-with-niagara-coloso-kisong-lee-jpg-3808451721.jpg",
     "screenshots": [
-      "https://picsum.photos/seed/vfx-1a/800/450",
-      "https://picsum.photos/seed/vfx-1b/800/450"
+      "https://i.ibb.co/zhHGY5Tq/gamegraphic-leekisong-portfolio-01.gif",
+      "https://i.ibb.co/4wx41w1v/gamegraphic-leekisong-portfolio-06.gif"
     ],
-    "tags": ["vfx", "compositing", "simulation"],
-    "hours": 5.5,
-    "description": "A gentle introduction to Blender's VFX pipeline, camera tracking, simple simulations and compositing.",
-    "software": ["Blender"],
-    "language": "English",
-    "subtitles": false,
+    "tags": ["vfx", "game engine", "simulation", "unreal engine", "niagara"],
+    "hours": 26,
+    "description": "Learn everything in this course, from the essentials of responsive effects, including color impressions, form, and timing of effects, to the intricacies of effect production tailored to each motion.",
+    "software": ["Unreal Engine"],
+    "language": "Korean",
+    "subtitles": true,
     "materials": true,
-    "downloadLink": "https://example.com/downloads/vfx-blender-intro",
-    "sourceLink": "https://example.com/courses/vfx-blender-intro"
+    "downloadLink": "https://t.me/c/1603660516/2438/120982",
+    "sourceLink": "https://coloso.global/en/products/vfxartist-kisonglee-us"
   },
   {
     "id": "c4",
-    "title": "Rigging Essentials for Characters",
+    "title": "P2Design Academy - AOER² - The Art of Effective Rigging 2",
     "category": "Rigging",
     "level": "Intermediate",
-    "thumbnail": "https://picsum.photos/seed/rigging-1/600/400",
+    "thumbnail": "https://i.ibb.co/k2T0ZjKV/n6-Hfowyy-R4y-RUGNz6p-SA-Kibali-s-rush-2709098334.gif",
     "screenshots": [
-      "https://picsum.photos/seed/rigging-1a/800/450",
-      "https://picsum.photos/seed/rigging-1b/800/450"
+      "https://i.ibb.co/1JwYckQn/AOER-All-Characters-1726095199-665621186.jpg",
+      "https://i.ibb.co/C3RqWTCH/maxresdefault-3408122663.jpg"
     ],
-    "tags": ["rigging", "controllers", "deformation"],
-    "hours": 7.2,
+    "tags": ["rigging", "scripting", "blender"],
+    "hours": 33,
     "description": "Build production-ready character rigs with clean deformation, IK/FK systems and animator-friendly controls.",
-    "software": ["Blender", "Maya"],
+    "software": ["Blender"],
     "language": "English",
     "subtitles": true,
     "materials": true,
-    "downloadLink": "https://example.com/downloads/rigging-essentials",
-    "sourceLink": "https://example.com/courses/rigging-essentials"
+    "downloadLink": "https://t.me/blenderespanol/883",
+    "sourceLink": "https://www.p2design-academy.com/p/the-art-of-effective-rigging-2"
   },
   {
     "id": "c5",
