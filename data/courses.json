@@ -310,7 +310,7 @@
       "https://i.ibb.co/PzQhQT8z/example-dictionary-shinminjeong3-37.webp"
     ],
     "tags": ["blender"],
-    "hours": 44,
+    "hours": 37.36,
     "description": "Learn to create high-quality 3D characters with 160 examples! Unlock the advanced curriculum that expands your character’s style and visual storytelling. Bring the personality you’ve imagined to life and complete it as a single polished artwork. Join Minjeong Shin’s trusted class and create richly detailed, one-of-a-kind characters like never before!",
     "software": ["Blender"],
     "language": "Korean",
@@ -318,5 +318,25 @@
     "materials": true,
     "downloadLink": "https://t.me/c/1603660516/2438/535802",
     "sourceLink": "https://coloso.global/en/products/3dcharacterartist-minjeongshin3-us"
+  },
+  {
+    "id": "c17",
+    "title": "Blender 3D Basic Training: Easy to Learn with 100 Artworks",
+    "category": "Motion Design",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/YTtrm8dk/dictionary-ddangking-detail-02.webp",
+    "screenshots": [
+      "https://i.ibb.co/JwDskt2b/kr-dictionary-ddangking-example-3-03.webp",
+      "https://i.ibb.co/RkP2vQWv/kr-dictionary-ddangking-example-3-09.webp"
+    ],
+    "tags": ["blender", "stylized"],
+    "hours": 57,
+    "description": "100가지 아트워크로 쉽게 익히는 블렌더 3D 기초 트레이닝. Cute profile characters, interior space configuration, and even lively animation production! See all of the emotional artwork in 3D, all in one place. Pounding, the most popular artist in the blender scene right now, will tell you all the warm and cozy artwork and production skills that are perfect for beginners.",
+    "software": ["Blender"],
+    "language": "Korean",
+    "subtitles": true,
+    "materials": true,
+    "downloadLink": "https://t.me/c/1603660516/2438/503890",
+    "sourceLink": "https://coloso.co.kr/products/dictionary-ddangking"
   }
 ]
