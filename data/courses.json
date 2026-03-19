@@ -376,8 +376,8 @@
     "language": "Korean",
     "subtitles": true,
     "materials": true,
-    "downloadLink": "https://t.me/c/1603660516/2438/434814",
-    "sourceLink": "https://coloso.co.kr/products/motiongraphic-starcover"
+    "downloadLink": "https://t.me/megacoursenew/2458",
+    "sourceLink": "https://coloso.global/en/products/3dvideocreator-popurika-us"
   },
   {
     "id": "c20",
@@ -417,7 +417,7 @@
     "subtitles": true,
     "materials": true,
     "downloadLink": "https://t.me/c/3401592526/416",
-    "sourceLink": "https://creativeshrimp.gumroad.com/l/Cinematic-Lighting-in-Blender"
+    "sourceLink": "https://coloso.global/en/products/3dcharacterartist-edpantera-us"
   },
   {
     "id": "c22",
@@ -438,5 +438,25 @@
     "materials": true,
     "downloadLink": "https://t.me/c/1603660516/2438/313763",
     "sourceLink": "https://coloso.jp/products/cgproductionstudio-spookygraphic-jp"
+  },
+  {
+    "id": "c23",
+    "title": "From Workflow to Production: A Complete Guide to Anime Creation",
+    "category": "Animation",
+    "level": "Advanced",
+    "thumbnail": "https://i.ibb.co/3yBTwsS4/jp-cgproductionstudio-spookygraphic-example-07.gif",
+    "screenshots": [
+      "https://i.ibb.co/mFCRgm8S/jp-animationdirector-yamashita-example-05.gif",
+      "https://i.ibb.co/m5CTQwYq/jp-animationdirector-yamashita-sellingpoint-03-1.gif"
+    ],
+    "tags": ["anime", "animation", "2d"],
+    "hours": 48,
+    "description": "「NARUTO ナルト 疾風伝」や「呪術廻戦」(第1期) OPなど、数々の人気アニメーション作品を手掛ける、アニメーション監督の山下清悟。今回の講座では、15年以上の商業アニメーション制作経験を持つ山下清悟ならではの、商業アニメーションのワークフローと、完成度の高いアニメーション制作方法を、段階的にお教えします。",
+    "software": ["Blender","After Effects", "CLIP STUDIO PAINT", "Illustrator", "Photoshop", "Procreate Dreams"],
+    "language": "Japanese",
+    "subtitles": true,
+    "materials": true,
+    "downloadLink": "https://t.me/c/1603660516/2438/440898",
+    "sourceLink": "https://coloso.jp/products/animationdirector-yamashita-jp"
   }
 ]
