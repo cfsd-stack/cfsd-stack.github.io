@@ -370,6 +370,49 @@ main {
   color: #fff;
 }
 
+.dimension-switch {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px;
+    border-radius: var(--radius-md);
+    width: fit-content;
+}
+
+.dim-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.dim-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.dim-btn.active {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(108, 156, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+    .dimension-switch {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .dim-btn {
+        flex: 1;
+        text-align: center;
+    }
+}
+
 /* Responsive tweaks */
 @media (max-width: 900px) {
   .header-inner {
