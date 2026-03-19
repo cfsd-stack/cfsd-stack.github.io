@@ -26,7 +26,22 @@
       </select>
     </section>
 
-    <section id="courses" class="courses-grid" aria-label="Courses"></section>
+  <section id="courses" class="courses-grid" aria-label="Courses"></section>
+
+  <!-- Course Details Modal -->
+  <div id="course-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Course details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close" id="modal-close">×</button>
+      <div class="modal-media" id="modal-media"></div>
+      <div class="modal-body">
+        <h2 id="modal-title" class="card-title" style="margin:6px 0 8px;"></h2>
+        <p id="modal-description" style="margin:0 0 8px; color:#eee;"></p>
+        <div id="modal-info" class="meta" style="margin:6px 0 8px;"></div>
+        <div id="modal-materials" class="meta" style="margin:6px 0 8px;"></div>
+        <div id="modal-actions" class="actions" style="margin-top:8px;"></div>
+      </div>
+    </div>
+  </div>
   </main>
   <footer class="container" style="text-align:center; padding:2rem 0; color:#666; font-size:0.9rem">
     © Course List Demo

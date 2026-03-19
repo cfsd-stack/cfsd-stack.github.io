@@ -34,3 +34,13 @@ body { margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Robo
 .button.secondary { background: #2a2b3a; }
 .button:hover { filter: brightness(1.05); }
 .empty { text-align: center; color: var(--muted); margin: 40px 0; }
+
+/* Modal styles */
+.modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.6); padding: 20px; z-index: 999; }
+.modal.open { display: flex; }
+.modal-content { width: min(860px, 90%); max-height: 80vh; overflow: auto; background: #0b0f1a; border-radius: 12px; padding: 12px; border: 1px solid rgba(255,255,255,0.15); color: #fff; }
+.modal-close { position: absolute; top: 14px; right: 18px; background: transparent; border: 0; font-size: 28px; color: #fff; cursor: pointer; }
+.modal-media { display: flex; gap: 8px; padding: 6px 6px 0; }
+.modal-media img { height: 180px; width: auto; border-radius: 6px; object-fit: cover; }
+.modal-body { padding: 0 6px 6px; }
+.modal-body .card-title { font-weight: 600; }

@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
       searchEl.addEventListener('input', render);
       categoryEl.addEventListener('change', render);
       levelEl.addEventListener('change', render);
+      // Setup modal interactions after cards render
+      setupModal(data);
     })
     .catch(() => {
       grid.innerHTML = '<div class="empty">Failed to load courses.</div>';
@@ -52,7 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     for (const c of items) {
-      grid.appendChild(cardFor(c));
+      const card = cardFor(c);
+      // attach click to open modal with more details
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => openModal(c));
+      grid.appendChild(card);
     }
   }
 
@@ -100,5 +106,69 @@ document.addEventListener('DOMContentLoaded', () => {
     card.appendChild(img);
     card.appendChild(body);
     return card;
+  }
+
+  // Modal handling
+  function setupModal(data) {
+    const modal = document.getElementById('course-modal');
+    const closeBtn = document.getElementById('modal-close');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-description');
+    const modalMedia = document.getElementById('modal-media');
+    const modalInfo = document.getElementById('modal-info');
+    const modalMaterials = document.getElementById('modal-materials');
+    const modalActions = document.getElementById('modal-actions');
+
+    function open(course) {
+      // Populate modal
+      modalTitle.textContent = course.title;
+      modalDesc.textContent = course.description || (course.title + ' is a ' + course.level + ' ' + course.category + ' course using ' + course.software.join(', ') + '. Estimated duration: ' + course.hours + ' hours.');
+      modalInfo.textContent = `Category: ${course.category} • Level: ${course.level} • Language: ${course.language} • Hours: ${course.hours}`;
+      modalMaterials.textContent = `Subtitles: ${course.subtitles ? 'Yes' : 'No'} • Materials: ${course.materials ? 'Yes' : 'No'}`;
+      // media gallery
+      modalMedia.innerHTML = '';
+      if (course.screenshots && course.screenshots.length > 0) {
+        for (const src of course.screenshots) {
+          const img = document.createElement('img');
+          img.src = src; img.alt = course.title + ' screenshot';
+          img.style.height = '120px'; img.style.borderRadius = '6px';
+          modalMedia.appendChild(img);
+        }
+      }
+      // actions
+      modalActions.innerHTML = '';
+      const aSource = document.createElement('a'); aSource.href = course.sourceLink; aSource.className = 'button'; aSource.target = '_blank'; aSource.textContent = 'Source';
+      const aDownload = document.createElement('a'); aDownload.href = course.downloadLink; aDownload.className = 'button'; aDownload.target = '_blank'; aDownload.textContent = 'Download';
+      modalActions.appendChild(aSource);
+      modalActions.appendChild(aDownload);
+      // show
+      modal.style.display = 'block';
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      // trap focus basics
+      modal.focus();
+    }
+
+    function close() {
+      modal.style.display = 'none';
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    // expose open for use by card click handler
+    window.openCourseModal = open;
+    closeBtn.addEventListener('click', close);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) close();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close();
+    });
+  }
+
+  function openModal(course) {
+    if (typeof window.openCourseModal === 'function') {
+      window.openCourseModal(course);
+    }
   }
 });
