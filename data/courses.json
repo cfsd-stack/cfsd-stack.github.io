@@ -538,5 +538,25 @@
     "materials": true,
     "downloadLink": "https://t.me/c/1603660516/320276/321395",
     "sourceLink": "https://flippednormals.com/product/introduction-to-3ds-max-12676"
+  },
+  {
+    "id": "c28",
+    "title": "Introduction to Sculpting in Blender",
+    "category": "Character Design",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/vnz1YWH/362736.jpg",
+    "screenshots": [
+      "https://i.ibb.co/TqW9RCh0/362737.jpg",
+      "https://i.ibb.co/S7chxnDP/362742.jpg"
+    ],
+    "tags": ["introduction", "HardSurface"],
+    "hours": 6.45,
+    "description": "Learn how to sculpt in Blender with our easy-to-follow course, taking you through everything you need to know! You'll learn how to use the different sculpting tools in Blender, such as dyntopo and remeshing - as well as sculpting techniques like understanding how to create appealing  shapes and characters.",
+    "software": ["Blender"],
+    "language": "English",
+    "subtitles": true,
+    "materials": true,
+    "downloadLink": "https://t.me/c/1603660516/320276/321385",
+    "sourceLink": "https://flippednormals.com/product/introduction-to-sculpting-in-blender-10060"
   }
 ]
