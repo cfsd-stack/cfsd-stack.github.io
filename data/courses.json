@@ -378,5 +378,25 @@
     "materials": true,
     "downloadLink": "https://t.me/c/1603660516/2438/434814",
     "sourceLink": "https://coloso.co.kr/products/motiongraphic-starcover"
+  },
+  {
+    "id": "c20",
+    "title": "Cinematic Lighting in Blender",
+    "category": "Rendering",
+    "level": "Intermediate",
+    "thumbnail": "https://i.ibb.co/zW9m5tSv/lighting-course-breakdown-03.gif",
+    "screenshots": [
+      "https://i.ibb.co/VYV0B6ck/remastered-updated-cinematic-lighting-gif-01b.gif",
+      "https://i.ibb.co/Kxn17XVf/lighting-course-breakdown-02.gif"
+    ],
+    "tags": ["lighting", "render", "eevee", "cycles", "composition"],
+    "hours": 13,
+    "description": "Level-up your 3D lighting skills by watching our foundational 13+ hour course - now Updated and Remastered for Blender 5.x | 2026. It’s all really simple: lighting is everything! After all in order to see ANYTHING we NEED light. As 3D artists we all know this obvious truth but we're still too often guilty of spending WAY more time on the modeling and barely a thought to the lighting when it's that which makes or breaks a scene.",
+    "software": ["Blender"],
+    "language": "English",
+    "subtitles": false,
+    "materials": true,
+    "downloadLink": "https://t.me/c/3401592526/416",
+    "sourceLink": "https://creativeshrimp.gumroad.com/l/Cinematic-Lighting-in-Blender"
   }
 ]
