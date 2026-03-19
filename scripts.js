@@ -10,10 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       window._courses = data;
       populateCategories(data);
-      render();
-      searchEl.addEventListener('input', render);
-      categoryEl.addEventListener('change', render);
-      levelEl.addEventListener('change', render);
+      // initial render of all courses
+      renderList(data);
+      // wire up filters/search against the full list
+      searchEl.addEventListener('input', applyFilters);
+      categoryEl.addEventListener('change', applyFilters);
+      levelEl.addEventListener('change', applyFilters);
       // Setup modal interactions after cards render
       setupModal(data);
     })
@@ -32,12 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function render(evtOrList) {
-    // Apply filters
+  function applyFilters() {
+    if (!Array.isArray(window._courses)) {
+      return;
+    }
+    // Apply filters on the full list
     const q = (searchEl.value || '').toLowerCase();
     const cat = categoryEl.value;
     const lvl = levelEl.value;
-    const base = Array.isArray(evtOrList) ? evtOrList : (window._courses || []);
+    const base = window._courses;
     const results = base.filter(course => {
       const matchCat = cat ? course.category === cat : true;
       const matchLvl = lvl ? course.level.toLowerCase() === lvl.toLowerCase() : true;
