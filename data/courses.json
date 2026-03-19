@@ -1,11 +1,11 @@
 [
   {
     "id": "c1",
-    "title": "Fundamentals of Character Design",
+    "title": "Fundamentals",
     "category": "Character Design",
     "level": "Beginner",
     "thumbnail": "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg",
-    "screenshots": ["https://picsum.photos/seed/char-design-1a/800/450", "https://picsum.photos/seed/char-design-1b/800/450"],
+    "screenshots": ["https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg", "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg"],
     "downloadLink": "https://example.com/downloads/character-design-fundamentals",
     "sourceLink": "https://example.com/courses/character-design-fundamentals",
     "subtitles": true,
