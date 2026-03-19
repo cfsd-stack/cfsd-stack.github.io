@@ -181,7 +181,7 @@
   },
   {
     "id": "c10",
-    "title": "Motion Design with After Effects",
+    "title": "Product Design with Cinema 4D and Octane Renderer",
     "category": "Motion Design",
     "level": "Intermediate",
     "thumbnail": "https://i.ibb.co/4Zvs6C9T/2026-03-19-153334.png",
@@ -201,43 +201,43 @@
   },
   {
     "id": "c11",
-    "title": "Environment Art: Sculpting & World Building",
+    "title": "WorldBuilder - Environment Concept Art Foundations",
     "category": "Concept Art",
-    "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/env-1/600/400",
+    "level": "Intermediate",
+    "thumbnail": "https://i.ibb.co/b555kRgs/tmp-yfwzsxa.webp",
     "screenshots": [
-      "https://picsum.photos/seed/env-1a/800/450",
-      "https://picsum.photos/seed/env-1b/800/450"
+      "https://i.ibb.co/p6L0wnnq/tmp75v5y-qv.webp",
+      "https://i.ibb.co/gFbWc2Gw/tmpfjg2s9jf.webp"
     ],
     "tags": ["environment", "world building", "concept art"],
     "hours": 7.2,
     "description": "Design, block out and detail compelling environments and worlds for games and film.",
-    "software": ["Blender", "Substance Designer"],
+    "software": ["Blender", "Photoshop"],
     "language": "English",
-    "subtitles": false,
+    "subtitles": true,
     "materials": true,
-    "downloadLink": "https://example.com/downloads/environment-art",
-    "sourceLink": "https://example.com/courses/environment-art"
+    "downloadLink": "https://t.me/c/1525044096/35935/40923",
+    "sourceLink": "https://imaworldbuilder.com/foundations"
   },
   {
     "id": "c12",
-    "title": "Unreal Engine Fundamentals",
+    "title": "The Ultimate Unreal Engine Course",
     "category": "Unreal Engine",
-    "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/unreal-1/600/400",
+    "level": "Intermediate",
+    "thumbnail": "https://i.ibb.co/mFgRWQds/photo-2025-07-06-15-58-20.jpg",
     "screenshots": [
-      "https://picsum.photos/seed/unreal-1a/800/450",
-      "https://picsum.photos/seed/unreal-1b/800/450"
+      "https://i.ibb.co/zhZJ5tDd/image-2097251483.jpg",
+      "https://i.ibb.co/3mM7qPCQ/image-2448846456.jpg"
     ],
-    "tags": ["unreal engine", "realtime", "blueprints"],
-    "hours": 6.5,
-    "description": "Get comfortable with Unreal Engine's interface, materials, lighting and Blueprint scripting.",
+    "tags": ["unreal engine", "realtime", "blueprints", "cinematic", "rendering", "lighting", "shading", "compositing", "visual design", "composition", "portfolio", "niagara", "ai", "physics","metahuman","optimisation","animation"],
+    "hours": 20,
+    "description": "No 3D Experience? No Problem! We give you a step-by-step program teaching you the most powerful 3D software, for beginners and pros who want portfolio-ready results!",
     "software": ["Unreal Engine"],
     "language": "English",
     "subtitles": true,
     "materials": true,
-    "downloadLink": "https://example.com/downloads/unreal-fundamentals",
-    "sourceLink": "https://example.com/courses/unreal-fundamentals"
+    "downloadLink": "https://t.me/c/1525044096/1/32290",
+    "sourceLink": "https://learn.baddecisions.studio/"
   },
   {
     "id": "c13",
