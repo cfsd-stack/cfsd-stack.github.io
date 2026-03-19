@@ -44,9 +44,9 @@
     "title": "Bringing Artistic Game Effects to Life with Niagara",
     "category": "VFX",
     "level": "Intermediate",
-    "thumbnail": "https://i.ibb.co/8nD5QKmW/bringing-artistic-game-effects-to-life-with-niagara-coloso-kisong-lee-jpg-3808451721.jpg",
+    "thumbnail": "https://i.ibb.co/zhHGY5Tq/gamegraphic-leekisong-portfolio-01.gif",
     "screenshots": [
-      "https://i.ibb.co/zhHGY5Tq/gamegraphic-leekisong-portfolio-01.gif",
+      "https://i.ibb.co/8nD5QKmW/bringing-artistic-game-effects-to-life-with-niagara-coloso-kisong-lee-jpg-3808451721.jpg",
       "https://i.ibb.co/4wx41w1v/gamegraphic-leekisong-portfolio-06.gif"
     ],
     "tags": ["vfx", "game engine", "simulation", "unreal engine", "niagara"],
@@ -76,92 +76,92 @@
     "language": "English",
     "subtitles": true,
     "materials": true,
-    "downloadLink": "https://t.me/blenderespanol/883",
+    "downloadLink": "https://t.me/Cg_peers/1571",
     "sourceLink": "https://www.p2design-academy.com/p/the-art-of-effective-rigging-2"
   },
   {
     "id": "c5",
-    "title": "Animation Fundamentals: Timing & Motion",
+    "title": "Introductory Game Animation Pipelines for Anime Characters",
     "category": "Animation",
     "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/anim-1/600/400",
+    "thumbnail": "https://i.ibb.co/ZRnxKCMt/3dgameanimator-kimyeongje-example7.gif",
     "screenshots": [
-      "https://picsum.photos/seed/anim-1a/800/450",
-      "https://picsum.photos/seed/anim-1b/800/450"
+      "https://i.ibb.co/RkNYzPW0/3dgameanimator-kimyeongje-example10.gif",
+      "https://i.ibb.co/wvhbk3d/3dgameanimator-kimyeongje-example12.gif"
     ],
-    "tags": ["animation", "timing", "spacing", "principles"],
-    "hours": 4.2,
-    "description": "Understand the 12 principles of animation with a focus on timing, spacing, arcs and weight.",
-    "software": ["Blender"],
-    "language": "English",
+    "tags": ["animation", "anime", "unity", "principles"],
+    "hours": 33,
+    "description": "From creating rhythm action games for Nintendo Switch to creating mobile RPG games! The class of Yeongje Kim, a 3D game animator who is actively working in various industries, has finally arrived.",
+    "software": ["Unity", "3ds Max"],
+    "language": "Korean",
     "subtitles": true,
-    "materials": false,
-    "downloadLink": "https://example.com/downloads/animation-fundamentals",
-    "sourceLink": "https://example.com/courses/animation-fundamentals"
+    "materials": true,
+    "downloadLink": "https://t.me/CGPERS/13929",
+    "sourceLink": "https://coloso.global/en/products/3dgameanimator_kimyeongje-us"
   },
   {
     "id": "c6",
-    "title": "Compositing for Visual Effects",
+    "title": "Mastering Ocean Simulations In Houdini",
     "category": "Compositing",
-    "level": "Intermediate",
-    "thumbnail": "https://picsum.photos/seed/comp-1/600/400",
+    "level": "Advanced",
+    "thumbnail": "https://i.ibb.co/FqmjqgGz/68e0b61fee934ae53f666a5a-Ocean-Titles-v6-min.png",
     "screenshots": [
-      "https://picsum.photos/seed/comp-1a/800/450",
-      "https://picsum.photos/seed/comp-1b/800/450"
+      "https://i.ibb.co/KpP3ffQ0/68e107563eeadc2e7a2ac49f-Screenshot-2025-09-18-at-2-28-20-PM-1-min-p-1080.png",
+      "https://i.ibb.co/sdnbRQVN/68e1075284a45df6f2e0901d-Screenshot-2025-09-18-at-2-30-14-PM-2-min-p-1080.png"
     ],
-    "tags": ["compositing", "vfx", "grading"],
-    "hours": 7,
-    "description": "Learn to combine live-action plates, CG renders and FX passes into cohesive final shots.",
-    "software": ["After Effects", "Blender"],
+    "tags": ["compositing", "vfx", "grading", "houdini", "nuke", "ocean simulation", "vfx","render"],
+    "hours": 29,
+    "description": "Your Captain is none other than the infamous, VES Award Winning artist (Shōgun), Dominic Tiedeken. He’ll guide you through the rough sees of FLIP and Oceans in houdini. Together we’ll navigate FLIP settings, WhiteWater, Foam, Spray, Meshing, fluid optimization, rendering, and so much more.",
+    "software": ["Houdini", "Karma", "Nuke"],
     "language": "English",
     "subtitles": true,
     "materials": true,
-    "downloadLink": "https://example.com/downloads/compositing-vfx",
-    "sourceLink": "https://example.com/courses/compositing-vfx"
+    "downloadLink": "https://t.me/c/1525044096/35935/41679",
+    "sourceLink": "https://www.doublejumpacademy.com/workshops/mastering-ocean-simulations-in-houdini"
   },
   {
     "id": "c7",
-    "title": "Texturing Masterclass with Substance Painter",
+    "title": "Introduction to Substance Painter",
     "category": "Texturing",
-    "level": "Advanced",
-    "thumbnail": "https://picsum.photos/seed/tex-1/600/400",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/0VQWb3TQ/maxresdefault-3846379004.jpg",
     "screenshots": [
-      "https://picsum.photos/seed/tex-1a/800/450",
-      "https://picsum.photos/seed/tex-1b/800/450"
+      "https://i.ibb.co/rKYgzV3W/278525.webp",
+      "https://i.ibb.co/t067yhc/278528.webp"
     ],
-    "tags": ["texturing", "pbr", "substance painter"],
-    "hours": 8.3,
-    "description": "Author production-grade PBR textures, smart materials and masks for characters and props.",
-    "software": ["Substance Painter"],
+    "tags": ["texturing", "pbr", "substance 3D painter"],
+    "hours": 4,
+    "description": "In this Introduction to Substance Painter series, you'll learn everything you need to know in order to get started with Substance Painter. The first part will get your familiar with the commonly used tools, and in the second part, we'll texture a real-world asset.",
+    "software": ["Substance 3D Painter"],
     "language": "English",
     "subtitles": true,
     "materials": true,
-    "downloadLink": "https://example.com/downloads/texturing-masterclass",
-    "sourceLink": "https://example.com/courses/texturing-masterclass"
+    "downloadLink": "https://t.me/CGPERS/4091",
+    "sourceLink": "https://flippednormals.com/product/introduction-to-substance-painter-235"
   },
   {
     "id": "c8",
-    "title": "UV Mapping Essentials",
+    "title": "UV Mapping for Games",
     "category": "UV",
     "level": "Beginner",
-    "thumbnail": "https://picsum.photos/seed/uv-1/600/400",
+    "thumbnail": "https://i.ibb.co/7d5Nx1bm/565837-2073173215.jpg",
     "screenshots": [
-      "https://picsum.photos/seed/uv-1a/800/450",
-      "https://picsum.photos/seed/uv-1b/800/450"
+      "https://i.ibb.co/Pzg4R1kT/319524-900606442.webp",
+      "https://i.ibb.co/tpz4Q4qF/image-1521049767.jpg"
     ],
     "tags": ["uvs", "unwrapping", "texel density"],
-    "hours": 3.5,
-    "description": "Unwrap clean UVs for characters and environments, manage texel density and layout for texturing.",
+    "hours": 2,
+    "description": "In UV Mapping for Games we'll tackle, in great depth, one of the most common pain-points that all 3D artists have: UV Mapping. No matter which area of game development you are in, if you interact with 3D models you will need to know about UV mapping - even if only at a fundamental level.",
     "software": ["Blender"],
     "language": "English",
-    "subtitles": false,
+    "subtitles": true,
     "materials": true,
-    "downloadLink": "https://example.com/downloads/uv-essentials",
-    "sourceLink": "https://example.com/courses/uv-essentials"
+    "downloadLink": "https://t.me/c/1603660516/320276/322818",
+    "sourceLink": "https://flippednormals.com/product/uv-mapping-for-games-5318"
   },
   {
     "id": "c9",
-    "title": "Render Techniques & Lighting",
+    "title": "Rendering University",
     "category": "Rendering",
     "level": "Intermediate",
     "thumbnail": "https://picsum.photos/seed/render-1/600/400",
@@ -169,9 +169,9 @@
       "https://picsum.photos/seed/render-1a/800/450",
       "https://picsum.photos/seed/render-1b/800/450"
     ],
-    "tags": ["rendering", "lighting", "shading"],
+    "tags": ["rendering", "lighting", "shading", "Framing","Compositing", "Visual Design", "Composition"],
     "hours": 6,
-    "description": "Light and render cinematic stills and turntables with proper exposure, color and mood.",
+    "description": "This training focuses intensely on the crucial aspects of presentation for 3D artists, aiming to elevate portfolio quality and attract professional opportunities",
     "software": ["Blender", "Cycles"],
     "language": "English",
     "subtitles": true,
