@@ -586,5 +586,26 @@
     "materials": true,
     "downloadLink": "https://t.me/c/1603660516/320276/321385",
     "sourceLink": "https://flippednormals.com/product/introduction-to-sculpting-in-blender-10060"
-  }
+  },
+  {
+    "id": "c29",
+    "title": "CG人体造型系统课 | CG Figure Sculpting Intensive (Season 6 - 2024)",
+    "dimension": "2D",
+    "category": "Anatomy",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/hxymZGnH/photo-2025-05-06-19-45-49.jpg",
+    "screenshots": [
+      "https://i.ibb.co/0RvJ4m5G/image.png",
+      "https://i.ibb.co/hR0d8xf4/image.png"
+    ],
+    "tags": ["anatomy", "portraits", "chinese", "portraits"],
+    "hours": 0,
+    "description": "Learn anatomy, proportions, body desing and portraits",
+    "software": ["PS", "CSP"],
+    "language": "Chinese", "English",
+    "subtitles": true,
+    "materials": false,
+    "downloadLink": "https://t.me/c/1603660516/3077/505694",
+    "sourceLink": "https://www.artstation.com/xhjh2026"
+  },
 ]
