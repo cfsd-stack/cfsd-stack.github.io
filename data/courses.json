@@ -398,5 +398,25 @@
     "materials": true,
     "downloadLink": "https://t.me/c/3401592526/416",
     "sourceLink": "https://creativeshrimp.gumroad.com/l/Cinematic-Lighting-in-Blender"
+  },
+  {
+    "id": "c21",
+    "title": "Modeling Beautiful and Lifelike Female Characters",
+    "category": "Character Design",
+    "level": "Intermediate",
+    "thumbnail": "https://i.ibb.co/C3yB0hgj/sellingpoint-3dcharacterartist-edpantera-02.webp",
+    "screenshots": [
+      "https://i.ibb.co/5hDGWHMq/example-3dcharacterartist-edpantera-07.webp",
+      "https://i.ibb.co/wZTDzwsC/example-3dcharacterartist-edpantera-04-1.webp"
+    ],
+    "tags": ["hyperrealism", "realistic", "clothing", "hair", "posing", "post-correction", "UV", "Baking", "sculpting"],
+    "hours": 8,
+    "description": "Learn the complete process of creating a realistic, aesthetic female character, exclusively revealed for the first time! Ed Pantera, a top-tier 3D character artist with 20 years of experience, shares the practical work process used across the game industry. Discover the most practical method of full-body modeling of realistic female characters, available only on Coloso.",
+    "software": ["Zbrush", "3ds Max", "Substance 3D Painter", "Photoshop", "Marmorset Toolbag"],
+    "language": "Korean",
+    "subtitles": true,
+    "materials": true,
+    "downloadLink": "https://t.me/c/3401592526/416",
+    "sourceLink": "https://creativeshrimp.gumroad.com/l/Cinematic-Lighting-in-Blender"
   }
 ]
