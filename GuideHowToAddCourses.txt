@@ -1,0 +1,45 @@
+
+## How to add courses to the list
+
+All courses should be added in separate brunch, before merging with main to avoid crashes.
+To add a new course, you should open /courses.json and go to the bottom of the file.
+After that you can add a new course.
+
+id - is an identification number of the course.
+title - title of the course.
+dimension - is it course 3D or 2D, you need to pick the dimension.
+category - every course divided by different categories
+level - every course has a level from beginner to advanced
+thumbnail - is a head image of the course. Before uploading it to https://ibb.co/ or any other image hosting please convert it to JPG format and resize. Image or GIF should be under 1.2MB of size.
+screenshots - every course has 2 screenshots. thumbnail rule of resizing and converting applies here as well.
+tags - to make searching easier we add tags to the course
+hours - the lenght of video materal of the course
+description - description of the course
+software - software used in the course
+language - language of the course
+subtitles - does the course has subtitles
+materials - does materials included in the course
+downloadLink - link to the download
+sourceLink - link to the source
+
+{
+    "id": "c1",
+    "title": "HOW I CREATE Hair with Xgen - Maya",
+    "dimension": "3D",
+    "category": "Character Design",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/kgn2BkJN/photo-2026-03-13-10-48-31.jpg",
+    "screenshots": [
+      "https://i.ibb.co/0R5X39mz/1981490.jpg",
+      "https://i.ibb.co/C5X27hhX/1981495.jpg"
+    ],
+    "tags": ["hair", "xgen", "maya", "arnold"],
+    "hours": 7,
+    "description": "The goal of this product, is to give you all the keys to create realistic hair in X-gen / Maya using xgen-core. From learning all the X-gen fundamentals, to create your first Haircut.",
+    "software": ["Maya", "Zbrush", "Arnold"],
+    "language": "English",
+    "subtitles": false,
+    "materials": true,
+    "downloadLink": "https://t.me/CGPERS/13920",
+    "sourceLink": "https://flippednormals.com/product/how-i-create-hair-with-xgen-maya-48270"
+  },
