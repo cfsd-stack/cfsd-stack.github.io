@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const results = base.filter(course => {
       const matchCat = cat ? course.category === cat : true;
       const matchLvl = lvl ? course.level.toLowerCase() === lvl.toLowerCase() : true;
-      const text = `${course.title} ${course.software.join(' ')} ${course.language}`.toLowerCase();
-      const matchText = q ? text.includes(q) : true;
+      const titleText = (course.title || '').toLowerCase();
+      const matchText = q ? titleText.includes(q) : true;
       return matchCat && matchLvl && matchText;
     });
     renderList(results);
