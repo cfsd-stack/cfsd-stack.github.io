@@ -1,5 +1,5 @@
 
-## How to add courses to the list
+##How to add courses to the list
 
 All courses should be added in separate brunch, before merging with main to avoid crashes.
 To add a new course, you should open /courses.json and go to the bottom of the file.
