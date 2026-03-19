@@ -516,7 +516,27 @@
     "language": "English",
     "subtitles": true,
     "materials": true,
-    "downloadLink": "https://t.me/c/1603660516/289/440043",
-    "sourceLink": "https://coloso.jp/products/animationdirector-yamashita-jp"
+    "downloadLink": "https://t.me/c/1603660516/320276/322114",
+    "sourceLink": "https://flippednormals.com/product/introduction-to-modeling-in-maya-16644"
+  },
+  {
+    "id": "c27",
+    "title": "Introduction to 3ds Max",
+    "category": "3D Modeling",
+    "level": "Beginner",
+    "thumbnail": "https://i.ibb.co/4n6ZdGC5/385879.jpg",
+    "screenshots": [
+      "https://i.ibb.co/XZDx9nM0/385880.jpg",
+      "https://i.ibb.co/hFVCcGmg/385883.jpg"
+    ],
+    "tags": ["introduction", "HardSurface"],
+    "hours": 12.37,
+    "description": "With over 12 hours of high-quality training, you’ll learn everything you need to know to get started with 3ds Max! Learn 3D modeling, simulations, UV unwrapping, rigging, deformers, material creation, lighting and using Arnold for rendering.",
+    "software": ["3ds Max"],
+    "language": "English",
+    "subtitles": true,
+    "materials": true,
+    "downloadLink": "https://t.me/c/1603660516/320276/322114",
+    "sourceLink": "https://flippednormals.com/product/introduction-to-modeling-in-maya-16644"
   }
 ]
