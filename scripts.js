@@ -1,13 +1,13 @@
+// Simple data-driven courses catalog (framework-agnostic)
 document.addEventListener('DOMContentLoaded', () => {
     const searchEl = document.getElementById('search');
     const categoryEl = document.getElementById('category');
     const levelEl = document.getElementById('level');
     const grid = document.getElementById('courses');
-    
     const dimButtons = document.querySelectorAll('.dim-btn');
-    let activeDimension = '3D'; // Default view
-
+    let activeDimension = '3D';
     let courses = [];
+
     const coursesUrl = new URL('data/courses.json', window.location.href);
     const cacheBust = `cb=${Date.now()}`;
     const fetchUrl = `${coursesUrl.toString()}${coursesUrl.search ? '&' : '?'}${cacheBust}`;
@@ -27,24 +27,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.addEventListener('click', (e) => {
                     dimButtons.forEach(b => b.classList.remove('active'));
                     e.target.classList.add('active');
-                    
                     activeDimension = e.target.getAttribute('data-dim');
-                    
                     applyFilters(courses);
                 });
             });
-
             setupModal();
         })
-        .catch(() => {
+        .catch(err => {
+            console.error('Load error:', err);
             grid.innerHTML = '<p class="empty">Failed to load courses.</p>';
         });
 
     function getCourseDimension(course) {
         if (course.dimension) return course.dimension;
         const tags = (course.tags || []).join(' ').toLowerCase();
-        if (tags.includes('2d')) return '2D';
-        return '3D';
+        return tags.includes('2d') ? '2D' : '3D';
     }
 
     function populateCategories(data) {
@@ -64,30 +61,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const lvl = levelEl.value;
         
         const results = base.filter(course => {
-            const courseDim = getCourseDimension(course);
-            
             const matchCat = cat ? course.category === cat : true;
-            const matchLvl = lvl ? course.level.toLowerCase() === lvl.toLowerCase() : true;
-            const matchDim = courseDim === activeDimension; // New Dimension Filter
-
+            const matchLvl = lvl ? course.level?.toLowerCase() === lvl.toLowerCase() : true;
+            const matchDim = getCourseDimension(course) === activeDimension;
             const haystack = [
                 course.title || '',
                 (course.tags || []).join(' '),
                 (course.software || []).join(' ')
-            ]
-                .join(' ')
-                .toLowerCase();
-
+            ].join(' ').toLowerCase();
             const matchText = q ? haystack.includes(q) : true;
             return matchCat && matchLvl && matchText && matchDim;
         });
-
         renderList(results);
     }
 
     function renderList(items) {
         grid.innerHTML = '';
-        if (!items || items.length === 0) {
+        if (!items?.length) {
             grid.innerHTML = '<p class="empty">No courses match your filters.</p>';
             return;
         }
@@ -104,16 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
         card.className = 'card';
         const img = document.createElement('img');
         img.src = course.thumbnail || 'https://picsum.photos/seed/placeholder/600/400';
-        img.onerror = () => {
-            img.src = 'https://picsum.photos/seed/placeholder/600/400';
-        };
+        img.onerror = () => { img.src = 'https://picsum.photos/seed/placeholder/600/400'; };
         img.alt = course.title;
         const body = document.createElement('div');
         body.className = 'card-body';
         const title = document.createElement('h3');
         title.className = 'card-title';
         title.textContent = course.title;
-
         const badgeRow = document.createElement('div');
         badgeRow.className = 'badge-row';
         const cat = document.createElement('span');
@@ -124,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
         lvl.textContent = course.level;
         badgeRow.appendChild(cat);
         badgeRow.appendChild(lvl);
-
         const tagsRow = document.createElement('div');
         tagsRow.className = 'tag-row';
         (course.tags || []).slice(0, 4).forEach(tag => {
@@ -133,15 +119,12 @@ document.addEventListener('DOMContentLoaded', () => {
             t.textContent = tag;
             tagsRow.appendChild(t);
         });
-
         const meta = document.createElement('div');
         meta.className = 'meta';
         meta.textContent = `Language: ${course.language} • Software: ${(course.software || []).join(', ')} • Hours: ${course.hours}`;
-
         const info = document.createElement('div');
         info.className = 'meta';
         info.textContent = `Subtitles: ${course.subtitles ? 'Yes' : 'No'} • Materials: ${course.materials ? 'Yes' : 'No'}`;
-
         const actions = document.createElement('div');
         actions.className = 'actions';
         const aSource = document.createElement('a');
@@ -156,14 +139,12 @@ document.addEventListener('DOMContentLoaded', () => {
         aDownload.textContent = 'Download';
         actions.appendChild(aSource);
         actions.appendChild(aDownload);
-
         body.appendChild(title);
         body.appendChild(badgeRow);
         if (tagsRow.childElementCount) body.appendChild(tagsRow);
         body.appendChild(meta);
         body.appendChild(info);
         body.appendChild(actions);
-
         card.appendChild(img);
         card.appendChild(body);
         return card;
@@ -171,8 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setupModal() {
         const modal = document.getElementById('course-modal');
-        if (!modal) return; 
-
+        if (!modal) return;
         const closeBtn = document.getElementById('modal-close');
         const modalTitle = document.getElementById('modal-title');
         const modalDesc = document.getElementById('modal-description');
@@ -184,12 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function open(course) {
             modalTitle.textContent = course.title;
-            modalDesc.textContent =
-                course.description ||
-                `${course.title} is a ${course.level} ${course.category} course using ${(course.software || []).join(', ')}. Estimated duration: ${course.hours} hours.`;
+            modalDesc.textContent = course.description || `${course.title} is a ${course.level} ${course.category} course.`;
             modalInfo.textContent = `Category: ${course.category} • Level: ${course.level} • Language: ${course.language} • Hours: ${course.hours}`;
             modalMaterials.textContent = `Subtitles: ${course.subtitles ? 'Yes' : 'No'} • Materials: ${course.materials ? 'Yes' : 'No'}`;
-
             modalTags.innerHTML = '';
             (course.tags || []).forEach(tag => {
                 const t = document.createElement('span');
@@ -197,17 +174,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 t.textContent = tag;
                 modalTags.appendChild(t);
             });
-
             modalMedia.innerHTML = '';
-            if (course.screenshots && course.screenshots.length > 0) {
-                for (const src of course.screenshots) {
+            if (course.screenshots?.length) {
+                course.screenshots.forEach(src => {
                     const img = document.createElement('img');
                     img.src = src;
                     img.alt = course.title + ' screenshot';
                     modalMedia.appendChild(img);
-                }
+                });
             }
-
             modalActions.innerHTML = '';
             const aSource = document.createElement('a');
             aSource.href = course.sourceLink;
@@ -221,24 +196,17 @@ document.addEventListener('DOMContentLoaded', () => {
             aDownload.textContent = 'Download';
             modalActions.appendChild(aSource);
             modalActions.appendChild(aDownload);
-
             modal.classList.add('open');
             modal.setAttribute('aria-hidden', 'false');
         }
-
         function close() {
             modal.classList.remove('open');
             modal.setAttribute('aria-hidden', 'true');
         }
-
         window.openCourseModal = open;
-        if(closeBtn) closeBtn.addEventListener('click', close);
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) close();
-        });
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') close();
-        });
+        if (closeBtn) closeBtn.addEventListener('click', close);
+        modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
     }
 
     function openModal(course) {
