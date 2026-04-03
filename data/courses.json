@@ -589,23 +589,23 @@
   },
   {
     "id": "c29",
-    "title": "Introduction to Sculpting in Blender",
+    "title": "Learn Maya Rigging from Riot Games TA",
     "dimension": "3D",
-    "category": "Character Design",
-    "level": "Beginner",
-    "thumbnail": "https://i.ibb.co/vnz1YWH/362736.jpg",
+    "category": "Rigging",
+    "level": "Intermediate",
+    "thumbnail": "https://imgfy.ru/ib/rrv2FpYl717iArN_1775222117.gif",
     "screenshots": [
-      "https://i.ibb.co/TqW9RCh0/362737.jpg",
-      "https://i.ibb.co/S7chxnDP/362742.jpg"
+      "https://imgfy.ru/ib/R0IlJ7uUFZ40glc_1775222117.gif",
+      "https://imgfy.ru/ib/SzOEbXmAReM4LRo_1775222117.gif"
     ],
-    "tags": ["introduction", "HardSurface"],
-    "hours": 6.45,
-    "description": "Learn how to sculpt in Blender with our easy-to-follow course, taking you through everything you need to know! You'll learn how to use the different sculpting tools in Blender, such as dyntopo and remeshing - as well as sculpting techniques like understanding how to create appealing  shapes and characters.",
-    "software": ["Blender"],
-    "language": "English",
-    "subtitles": true,
+    "tags": ["introduction", "Animation", "Game Development"],
+    "hours": 20,
+    "description": "A basic knowledge of rigging and technical art is recommended. This area represents the foundational knowledge that must be mastered, as it serves as an intermediary in all 3D production processes.",
+    "software": ["Maya"],
+    "language": "Korean",
+    "subtitles": false,
     "materials": true,
     "downloadLink": "https://t.me/+VvhcYyVhCfZlMWYy",
-    "sourceLink": "https://flippednormals.com/product/introduction-to-sculpting-in-blender-10060"
+    "sourceLink": "https://fastcampus.co.kr/dgn_online_omy"
   }
 ]
